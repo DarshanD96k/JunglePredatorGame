@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(images/Gameback.png);
+    overflow: hidden;
+}
+
+.gameContainer
+{
+    background-image: url(images/Gameback.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+    
+}
+.lion{background-image: url(images/lion.png);
+background-repeat: no-repeat;
+background-size: cover;
+    
+    position: absolute;
+    left: 64vh;
+    bottom: 40px;
+    height: 125px;
+    width: 185px;
+   
+
+}
+.Mon{background-image: url(images/monkey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+        position: absolute;
+        bottom: 40px;
+        left: 32px;
+        height: 130px;
+        width: 120px;
+    
+}
+
+.animateMon{
+    animation: Mon 0.6s linear;
+}
+@keyframes Mon{
+    0%{
+        bottom: 40px;
+        
+    }
+    50%{
+       bottom: 522px;
+       
+       
+
+    }
+    100%{
+        bottom:80px;
+
+
+    }
+    
+
+
+}
+
+
+
+.lionAni{
+    animation: lionAni 5s linear infinite;
+}
+@keyframes lionAni{
+    0%{
+        left:100vw
+    }
+    100%{
+        left:-80vw
+
+    }}
+
+.gameOver{
+    position: relative;
+    text-align: center;
+    
+    font-size: 33px;
+    font-family: sans-serif;
+    top:53px;
+    color: rgb(14, 204, 46);
+
+    
+    
+}
+marquee{
+    animation: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    font-size: 235px;
+    direction: ltr;
+    animation-delay: 0.4s;
+
+    
+}
+span{
+    color: red;
+}
+#scoreCont{
+    position: relative;
+    left: 23px;
+    top: 23px;
+    padding: 10px;
+    border: 2px solid red;
+    font-family: sans-serif;
+    width: 112px;
+
+}
+
+
+
